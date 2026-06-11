@@ -19,9 +19,6 @@ slow_test = None # 769924
 # LOCKED max cagr params at observed time: 5 days, 16:29:18 (21 trading days) on friday feb 27, Calendar days: 34, trading weeks: 4.9
 # 231104, 602715
 
-# on Mac, this program runs the first optimization pass in 11 min, on EC2, first pass is in 57 min.
-# EC2 program started at 3:27 PM
-
 # Config
 
 CSV_FILENAME = "data/imbalance_prices.csv"  # /Users/SaiSanjayD/Documents/PythonPrograms/imbalance_prices.csv
@@ -553,7 +550,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-I want to modify this program so that it first finds the date that makes the whole csv 21 trading days. So it finds a date where if you put that date and the date of the last row in the csv into the trading_days calculation, it will return 21. Then it finds the first row that has that date. So you end up with a date that makes the csv of 21 trading days that starts on the first row of a day. Don't do ANYTHING to the csv, however. Do not modify it. Only find that date for now, i'll give u more instructions later. 
-
-Give me minimal, exact before/after changes that does this. 
